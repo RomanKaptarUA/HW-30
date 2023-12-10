@@ -1,0 +1,37 @@
+.box{
+    background-color: aqua;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    animation-name: wrapBox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+}
+
+@keyframes wrapBox{
+    0%{
+         transform: translateX(50px);
+         background-color: blue;
+    }
+
+    25%{
+         transform: translateY(-50px);
+         background-color: green;
+    }
+
+    50%{
+         transform: translateX(-50px);
+         background-color: yellow;
+    }
+
+    75%{
+         transform: translateY(50px);
+         background-color: red;
+    }
+
+    100%{
+        transform: translateX(50px);
+        background-color: blue;
+    }
+}
